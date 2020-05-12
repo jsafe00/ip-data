@@ -37,16 +37,17 @@ function App() {
       </Helmet>
       <header>
         <section>
+         
+        </section>
+      </header>
+      {ipData ? (
+        <div>
           <h1>
               Gotcha!!! hehehe Buy me a coffee or else if or else.. hahhaha
           </h1>
           <a href="https://www.buymeacoffee.com/jsafe00" target="_blank">
             <img src="https://cdn.buymeacoffee.com/buttons/default-black.png" alt="Buy Me A Coffee" >
               </img></a>
-        </section>
-      </header>
-      {ipData ? (
-        <div>
           <DataTable data={ipData} />
         </div>
       ) : (
